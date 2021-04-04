@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>    
+<body>
+    <div class="container"> 
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="tictactoe.html">Tic Tac Toe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>KRISTIN LEE</div>
+                </div> 
+            </div>
+        </div>
+
+        <p>EXPLORE PARTS OF MY JOURNEY</p>
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Seattle</h2>
+                        
+                        <p>My hometown.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>University of Washington</h2>
+                       
+                        <p>The university I attended</p>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Software Development</h2>
+
+                        <p>Currently studying coding and working my way to be a software developer. </p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Asian American</h2>
+
+                        <p>Proud to be an ABC.</p>
+                            
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <p>Food = Happiness</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Japan</h2>
+
+                        <p>A place that is like another home to me.</p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Travel</h2>
+
+                        <p>Something I hope to continue to do until the end of my time.</p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>Anime</h2>
+
+                        <p>A very misrepresented hobby and industry.</p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <h2>South Korea</h2>
+
+                        <p>A great place to visit. The first country I studied abroad at.</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
